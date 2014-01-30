@@ -1,0 +1,6 @@
+<?php
+
+function test_sp_install() {
+  module_load_include('inc', 'islandora', 'include/solution_packs');
+  islandora_install_solution('sample_sp'); 
+}
