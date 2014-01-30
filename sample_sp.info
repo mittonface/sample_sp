@@ -1,0 +1,6 @@
+name = "Sample Solution Pack"
+description = "A wonderful description for a not so wonderful solution pack"
+core = 7.x
+dependencies[] = islandora
+package = Islandora
+configure = admin/islandora/sample_sp
