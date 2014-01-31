@@ -1,0 +1,27 @@
+<?php
+/**
+ * @file 
+ * FILE LEVEL COMMENT
+ */
+
+
+/**
+ * implements hook_menu()
+ *
+ */
+
+function sample_sp_menu() {
+  $items = array();
+
+  $items['admin/sample_sp'] = array(
+    'title' => 'Brent\'s Sample Solution Pack',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('sample_sp_admin'),
+    'access arguments' => array('module config'),
+    'description' => 'BRENT SO COOL',
+    'file' => 'includes/admin.form.inc',
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
